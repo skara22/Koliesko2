@@ -1,0 +1,54 @@
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-image-pair(root) {
+  isolation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+  display: block;
+}
+
+::view-transition-group(content) {
+  animation-duration: 175ms;
+}
+
+::view-transition-new(content) {
+  animation-delay: 175ms;
+}
+
+::view-transition-old(nav-underline),
+::view-transition-new(nav-underline) {
+  mix-blend-mode: normal;
+  height: 100%;
+  overflow: clip;
+}
+
+main {
+  view-transition-name: content;
+}
+
+a.nav-link.active span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+
+a.nav-link.active span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid white;
+  view-transitoin-name: underline;
+  height: 100%;
+}
+
+.c-bg-dark {
+  background-color: #004b5e;
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="sk" class="h-100">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+
+    <title>Koliesko - uvod</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+  </head>
+
+  <body class="h-100">
+    <div class="container-fluid h-100">
+      <div class="row flex-column" style="min-height: 100%">
+        <nav
+          class="navbar navbar-expand-md"
+          style="background-color: rgb(0, 56, 73)"
+          data-bs-theme="dark"
+        >
+          <div class="container">
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="./images/logo.svg"
+                alt="Logo firmy"
+                height="24"
+                class="d-inline-block align-tetxt-top"
+              />
+              KOLIESKO
+            </a>
+
+            <!-- tlacidlo na mobilnej obrazovke -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#polozkyMenu"
+              aria-controls="polozkyMenu"
+              aria-expanded="false"
+              aria-label="Zapni - vypni menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- polozky menu -->
+            <div class="collapse navbar-collapse" id="polozkyMenu">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="Uvod"
+                    href="index.html"
+                    >Uvod</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sluzby.html">Sluzby</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <main class="flex-fill">
+          <div class="container h-100">
+            <h2>Tu bude obsah uvodnej stranky</h2>
+          </div>
+        </main>
+
+        <footer style="background-color: rgb(0, 56, 73)">
+          <div class="container">
+            <div
+              class="card border-0 p-2"
+              data-bs-theme="dark"
+              style="background-color: rgb(0, 56, 73)"
+            >
+              &copy;2025 Autoservis Koliesko, spol s r.o.
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

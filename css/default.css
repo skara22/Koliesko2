@@ -45,7 +45,7 @@ a.nav-link.active span::after {
   position: absolute;
   width: 100%;
   border-bottom: 1px solid white;
-  view-transitoin-name: underline;
+  view-transition-name: nav-underline;
   height: 100%;
 }
 
